@@ -15,7 +15,7 @@ class ComponentLoading : UIView {
     var easeOutEndOpacity: Float = 0.2
     
     //Change Animation Start Opacity
-    var easeOutStartOpacity: Float = 0.5
+    var easeOutStartOpacity: Float = 1.0
     
     //Set Radius As per UI
     var edgeRadius: CGFloat = 5

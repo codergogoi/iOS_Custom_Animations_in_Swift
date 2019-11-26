@@ -29,7 +29,7 @@ class LoaderCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         //add Here for Show Loader
-        self.loadingAnimation = ComponentLoading(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        self.loadingAnimation = ComponentLoading(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         self.addSubview(self.loadingAnimation!)
     }
 
@@ -44,10 +44,15 @@ class LoaderCell: UITableViewCell {
 
 
 
-
 class ViewController: UIViewController {
 
     var loader: ComponentLoading?
+    
+    var v : UIView = {
+       
+        let v = UIView()
+        return v;
+    }()
     
     let tableView : UITableView = {
         
@@ -58,15 +63,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
+
+        
         self.view.addSubview(tableView)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         self.view.addSubview(tableView)
         tableView.register(LoaderCell.self, forCellReuseIdentifier: "cell")
         self.view.addConstraintWithFormat(formate: "H:|[v0]|", views: tableView)
-        self.view.addConstraintWithFormat(formate: "V:|[v0]|", views: tableView)
-        
+        self.view.addConstraintWithFormat(formate: "V:|-80-[v0]-|", views: tableView)
+
+        v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
+        self.view.addSubview(v)
+        v.makeCurve(curveAmount: 3.0)
+            
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let curvedView = CurveViewController()
+        self.present(curvedView, animated: true, completion: nil)
     }
     
 }

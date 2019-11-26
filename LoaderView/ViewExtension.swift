@@ -9,6 +9,12 @@
 import UIKit
 
 
+
+  
+
+
+//34/76/132
+
 extension UIView{
     
     func addConstraintWithFormat(formate: String, views: UIView...){
