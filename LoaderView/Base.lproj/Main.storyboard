@@ -79,10 +79,27 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="lep-hV-X4x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1768" y="263"/>
+        </scene>
+        <!--Curve View Controller-->
+        <scene sceneID="t7X-Lp-czx">
+            <objects>
+                <viewController id="Lqy-C1-xCI" customClass="CurveViewController" customModule="LoaderView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cL1-Bw-FuU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="v8r-lO-Vvd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4rR-pl-ZFQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yB2-kg-3OF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-76"/>
         </scene>
     </scenes>
 </document>

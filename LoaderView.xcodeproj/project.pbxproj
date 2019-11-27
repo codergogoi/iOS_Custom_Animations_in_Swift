@@ -14,8 +14,10 @@
 		5D57741D2383C7480052E676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D57741B2383C7480052E676 /* Main.storyboard */; };
 		5D57741F2383C74A0052E676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D57741E2383C74A0052E676 /* Assets.xcassets */; };
 		5D5774222383C74A0052E676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5774202383C74A0052E676 /* LaunchScreen.storyboard */; };
+		5DBC3653238E8D7900CB0701 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC3652238E8D7900CB0701 /* SwipeViewController.swift */; };
 		5DDE765A2387A72B005D11F8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE76592387A72B005D11F8 /* ViewExtension.swift */; };
 		5DFB946B238CE2AF00C55276 /* CurveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB946A238CE2AF00C55276 /* CurveViewController.swift */; };
+		5DFB946D238CF14D00C55276 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB946C238CF14D00C55276 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		5D57741E2383C74A0052E676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5774212383C74A0052E676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D5774232383C74A0052E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DBC3652238E8D7900CB0701 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		5DDE76592387A72B005D11F8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		5DFB946A238CE2AF00C55276 /* CurveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveViewController.swift; sourceTree = "<group>"; };
+		5DFB946C238CF14D00C55276 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				5DDE76592387A72B005D11F8 /* ViewExtension.swift */,
 				5D2EEF562387BED6006C5334 /* ComponentLoading.swift */,
 				5DFB946A238CE2AF00C55276 /* CurveViewController.swift */,
+				5DFB946C238CF14D00C55276 /* CustomSlider.swift */,
+				5DBC3652238E8D7900CB0701 /* SwipeViewController.swift */,
 			);
 			path = LoaderView;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DFB946B238CE2AF00C55276 /* CurveViewController.swift in Sources */,
+				5DFB946D238CF14D00C55276 /* CustomSlider.swift in Sources */,
 				5D57741A2383C7480052E676 /* ViewController.swift in Sources */,
+				5DBC3653238E8D7900CB0701 /* SwipeViewController.swift in Sources */,
 				5D2EEF572387BED6006C5334 /* ComponentLoading.swift in Sources */,
 				5D5774162383C7480052E676 /* AppDelegate.swift in Sources */,
 				5D5774182383C7480052E676 /* SceneDelegate.swift in Sources */,

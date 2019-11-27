@@ -83,8 +83,10 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         let curvedView = CurveViewController()
-        self.present(curvedView, animated: true, completion: nil)
+        
+        self.navigationController?.pushViewController(curvedView, animated: true)
     }
     
 }
